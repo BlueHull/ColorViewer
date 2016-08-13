@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75DD6EE01551C2DE00A1591E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DD6EDF1551C2DE00A1591E /* Cocoa.framework */; };
+		75DD6EEA1551C2DE00A1591E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75DD6EE81551C2DE00A1591E /* InfoPlist.strings */; };
+		75DD6EEC1551C2DE00A1591E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD6EEB1551C2DE00A1591E /* main.m */; };
+		75DD6EF01551C2DE00A1591E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 75DD6EEE1551C2DE00A1591E /* Credits.rtf */; };
+		75DD6EF31551C2DE00A1591E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD6EF21551C2DE00A1591E /* AppDelegate.m */; };
+		75DD6EF61551C2DE00A1591E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75DD6EF41551C2DE00A1591E /* MainMenu.xib */; };
+		75DD6EF91551C2DE00A1591E /* Color_Viewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75DD6EF71551C2DE00A1591E /* Color_Viewer.xcdatamodeld */; };
+		75DD6F021551C2DF00A1591E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DD6EDF1551C2DE00A1591E /* Cocoa.framework */; };
+		75DD6F0A1551C2DF00A1591E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75DD6F081551C2DF00A1591E /* InfoPlist.strings */; };
+		75DD6F0D1551C2DF00A1591E /* Color_ViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD6F0C1551C2DF00A1591E /* Color_ViewerTests.m */; };
+		D0135C5C162231440045680F /* CVAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0135C5B162231440045680F /* CVAppController.m */; };
+		D0EBB4211618B27E00820F35 /* CVData.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EBB4201618B27E00820F35 /* CVData.m */; };
+		D0EBB4251618FB2400820F35 /* CVColorConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EBB4241618FB2400820F35 /* CVColorConverter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75DD6F031551C2DF00A1591E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75DD6ED21551C2DD00A1591E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75DD6EDA1551C2DD00A1591E;
+			remoteInfo = "Color Viewer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75DD6EDB1551C2DE00A1591E /* Color Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DD6EDF1551C2DE00A1591E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		75DD6EE21551C2DE00A1591E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		75DD6EE31551C2DE00A1591E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		75DD6EE41551C2DE00A1591E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75DD6EE71551C2DE00A1591E /* Color Viewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Color Viewer-Info.plist"; sourceTree = "<group>"; };
+		75DD6EE91551C2DE00A1591E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75DD6EEB1551C2DE00A1591E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75DD6EED1551C2DE00A1591E /* Color Viewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Color Viewer-Prefix.pch"; sourceTree = "<group>"; };
+		75DD6EEF1551C2DE00A1591E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		75DD6EF11551C2DE00A1591E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75DD6EF21551C2DE00A1591E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		75DD6EF51551C2DE00A1591E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		75DD6EF81551C2DE00A1591E /* Color_Viewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Color_Viewer.xcdatamodel; sourceTree = "<group>"; };
+		75DD6EFF1551C2DF00A1591E /* Color ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DD6F071551C2DF00A1591E /* Color ViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Color ViewerTests-Info.plist"; sourceTree = "<group>"; };
+		75DD6F091551C2DF00A1591E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75DD6F0B1551C2DF00A1591E /* Color_ViewerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color_ViewerTests.h; sourceTree = "<group>"; };
+		75DD6F0C1551C2DF00A1591E /* Color_ViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color_ViewerTests.m; sourceTree = "<group>"; };
+		D0135C5A162231440045680F /* CVAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVAppController.h; sourceTree = "<group>"; };
+		D0135C5B162231440045680F /* CVAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVAppController.m; sourceTree = "<group>"; };
+		D0EBB41F1618B27E00820F35 /* CVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVData.h; sourceTree = "<group>"; };
+		D0EBB4201618B27E00820F35 /* CVData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVData.m; sourceTree = "<group>"; };
+		D0EBB4231618FB2400820F35 /* CVColorConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVColorConverter.h; sourceTree = "<group>"; };
+		D0EBB4241618FB2400820F35 /* CVColorConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVColorConverter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75DD6ED81551C2DD00A1591E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DD6EE01551C2DE00A1591E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DD6EFB1551C2DF00A1591E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DD6F021551C2DF00A1591E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75DD6ED01551C2DD00A1591E = {
+			isa = PBXGroup;
+			children = (
+				75DD6EE51551C2DE00A1591E /* Color Viewer */,
+				75DD6F051551C2DF00A1591E /* Color ViewerTests */,
+				75DD6EDE1551C2DE00A1591E /* Frameworks */,
+				75DD6EDC1551C2DE00A1591E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75DD6EDC1551C2DE00A1591E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75DD6EDB1551C2DE00A1591E /* Color Viewer.app */,
+				75DD6EFF1551C2DF00A1591E /* Color ViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75DD6EDE1551C2DE00A1591E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75DD6EDF1551C2DE00A1591E /* Cocoa.framework */,
+				75DD6EE11551C2DE00A1591E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75DD6EE11551C2DE00A1591E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75DD6EE21551C2DE00A1591E /* AppKit.framework */,
+				75DD6EE31551C2DE00A1591E /* CoreData.framework */,
+				75DD6EE41551C2DE00A1591E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		75DD6EE51551C2DE00A1591E /* Color Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				D0EBB41F1618B27E00820F35 /* CVData.h */,
+				D0EBB4201618B27E00820F35 /* CVData.m */,
+				D0EBB4231618FB2400820F35 /* CVColorConverter.h */,
+				D0EBB4241618FB2400820F35 /* CVColorConverter.m */,
+				D0135C5A162231440045680F /* CVAppController.h */,
+				D0135C5B162231440045680F /* CVAppController.m */,
+				75DD6EF11551C2DE00A1591E /* AppDelegate.h */,
+				75DD6EF21551C2DE00A1591E /* AppDelegate.m */,
+				75DD6EF41551C2DE00A1591E /* MainMenu.xib */,
+				75DD6EF71551C2DE00A1591E /* Color_Viewer.xcdatamodeld */,
+				75DD6EE61551C2DE00A1591E /* Supporting Files */,
+			);
+			path = "Color Viewer";
+			sourceTree = "<group>";
+		};
+		75DD6EE61551C2DE00A1591E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75DD6EE71551C2DE00A1591E /* Color Viewer-Info.plist */,
+				75DD6EE81551C2DE00A1591E /* InfoPlist.strings */,
+				75DD6EEB1551C2DE00A1591E /* main.m */,
+				75DD6EED1551C2DE00A1591E /* Color Viewer-Prefix.pch */,
+				75DD6EEE1551C2DE00A1591E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75DD6F051551C2DF00A1591E /* Color ViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				75DD6F0B1551C2DF00A1591E /* Color_ViewerTests.h */,
+				75DD6F0C1551C2DF00A1591E /* Color_ViewerTests.m */,
+				75DD6F061551C2DF00A1591E /* Supporting Files */,
+			);
+			path = "Color ViewerTests";
+			sourceTree = "<group>";
+		};
+		75DD6F061551C2DF00A1591E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75DD6F071551C2DF00A1591E /* Color ViewerTests-Info.plist */,
+				75DD6F081551C2DF00A1591E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75DD6EDA1551C2DD00A1591E /* Color Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DD6F101551C2DF00A1591E /* Build configuration list for PBXNativeTarget "Color Viewer" */;
+			buildPhases = (
+				75DD6ED71551C2DD00A1591E /* Sources */,
+				75DD6ED81551C2DD00A1591E /* Frameworks */,
+				75DD6ED91551C2DD00A1591E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Color Viewer";
+			productName = "Color Viewer";
+			productReference = 75DD6EDB1551C2DE00A1591E /* Color Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75DD6EFE1551C2DF00A1591E /* Color ViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75DD6F131551C2DF00A1591E /* Build configuration list for PBXNativeTarget "Color ViewerTests" */;
+			buildPhases = (
+				75DD6EFA1551C2DF00A1591E /* Sources */,
+				75DD6EFB1551C2DF00A1591E /* Frameworks */,
+				75DD6EFC1551C2DF00A1591E /* Resources */,
+				75DD6EFD1551C2DF00A1591E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75DD6F041551C2DF00A1591E /* PBXTargetDependency */,
+			);
+			name = "Color ViewerTests";
+			productName = "Color ViewerTests";
+			productReference = 75DD6EFF1551C2DF00A1591E /* Color ViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75DD6ED21551C2DD00A1591E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Blue Hull Software";
+			};
+			buildConfigurationList = 75DD6ED51551C2DD00A1591E /* Build configuration list for PBXProject "Color Viewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75DD6ED01551C2DD00A1591E;
+			productRefGroup = 75DD6EDC1551C2DE00A1591E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75DD6EDA1551C2DD00A1591E /* Color Viewer */,
+				75DD6EFE1551C2DF00A1591E /* Color ViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75DD6ED91551C2DD00A1591E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DD6EEA1551C2DE00A1591E /* InfoPlist.strings in Resources */,
+				75DD6EF01551C2DE00A1591E /* Credits.rtf in Resources */,
+				75DD6EF61551C2DE00A1591E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DD6EFC1551C2DF00A1591E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DD6F0A1551C2DF00A1591E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75DD6EFD1551C2DF00A1591E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75DD6ED71551C2DD00A1591E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DD6EEC1551C2DE00A1591E /* main.m in Sources */,
+				75DD6EF31551C2DE00A1591E /* AppDelegate.m in Sources */,
+				75DD6EF91551C2DE00A1591E /* Color_Viewer.xcdatamodeld in Sources */,
+				D0EBB4211618B27E00820F35 /* CVData.m in Sources */,
+				D0EBB4251618FB2400820F35 /* CVColorConverter.m in Sources */,
+				D0135C5C162231440045680F /* CVAppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75DD6EFA1551C2DF00A1591E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DD6F0D1551C2DF00A1591E /* Color_ViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75DD6F041551C2DF00A1591E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75DD6EDA1551C2DD00A1591E /* Color Viewer */;
+			targetProxy = 75DD6F031551C2DF00A1591E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75DD6EE81551C2DE00A1591E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75DD6EE91551C2DE00A1591E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75DD6EEE1551C2DE00A1591E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75DD6EEF1551C2DE00A1591E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		75DD6EF41551C2DE00A1591E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75DD6EF51551C2DE00A1591E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		75DD6F081551C2DF00A1591E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75DD6F091551C2DF00A1591E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75DD6F0E1551C2DF00A1591E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		75DD6F0F1551C2DF00A1591E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		75DD6F111551C2DF00A1591E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Color Viewer/Color Viewer-Prefix.pch";
+				INFOPLIST_FILE = "Color Viewer/Color Viewer-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Imago-Software.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75DD6F121551C2DF00A1591E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Color Viewer/Color Viewer-Prefix.pch";
+				INFOPLIST_FILE = "Color Viewer/Color Viewer-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Imago-Software.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		75DD6F141551C2DF00A1591E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Color Viewer.app/Contents/MacOS/Color Viewer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Color Viewer/Color Viewer-Prefix.pch";
+				INFOPLIST_FILE = "Color ViewerTests/Color ViewerTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Imago-Software.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		75DD6F151551C2DF00A1591E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Color Viewer.app/Contents/MacOS/Color Viewer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Color Viewer/Color Viewer-Prefix.pch";
+				INFOPLIST_FILE = "Color ViewerTests/Color ViewerTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Imago-Software.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75DD6ED51551C2DD00A1591E /* Build configuration list for PBXProject "Color Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DD6F0E1551C2DF00A1591E /* Debug */,
+				75DD6F0F1551C2DF00A1591E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DD6F101551C2DF00A1591E /* Build configuration list for PBXNativeTarget "Color Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DD6F111551C2DF00A1591E /* Debug */,
+				75DD6F121551C2DF00A1591E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75DD6F131551C2DF00A1591E /* Build configuration list for PBXNativeTarget "Color ViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75DD6F141551C2DF00A1591E /* Debug */,
+				75DD6F151551C2DF00A1591E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75DD6EF71551C2DE00A1591E /* Color_Viewer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75DD6EF81551C2DE00A1591E /* Color_Viewer.xcdatamodel */,
+			);
+			currentVersion = 75DD6EF81551C2DE00A1591E /* Color_Viewer.xcdatamodel */;
+			path = Color_Viewer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75DD6ED21551C2DD00A1591E /* Project object */;
+}
